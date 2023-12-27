@@ -27,17 +27,14 @@ body {
   background: #aaa;
 }
 
-.container {
+.todo-container {
   position: relative;
-  max-width: 480px;
   width: 100%;
   border-radius: 8px;
-  padding: 25px;
-  margin: 85px auto 0;
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.container .input-field {
+.todo-container .input-field {
   position: relative;
   height: 64px;
   width: 100%;
@@ -71,7 +68,7 @@ textarea::-webkit-scrollbar {
 .input-field textarea:focus ~ .note-icon {
   color: #4070f4;
 }
-.container .todoLists {
+.todo-container .todoLists {
   max-height: 380px;
   overflow-y: auto;
   padding-right: 10px;
@@ -87,7 +84,7 @@ textarea::-webkit-scrollbar {
   position: relative;
   cursor: pointer;
 }
-.weast{
+.weast {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,7 +120,7 @@ textarea::-webkit-scrollbar {
 .todoLists .list i:hover {
   opacity: 1;
 }
-.container .pending-tasks {
+.todo-container .pending-tasks {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,7 +145,7 @@ textarea::-webkit-scrollbar {
   background-color: #0e4bf1;
 }
 @media screen and (max-width: 350px) {
-  .container {
+  .todo-container {
     padding: 25px 10px;
   }
 }
