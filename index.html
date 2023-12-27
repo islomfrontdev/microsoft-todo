@@ -6,27 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
   </head>
   <body>
-    <div class="container">
-      <div class="input-field">
-        <textarea placeholder="Enter your new todo"></textarea>
-        <i class="uil uil-notes note-icon"></i>
+    <div class="flex">
+      <div class="w-[400px] h-screen bg-[#c6e7ff] p-5">
+        <p class="text-3xl font-bold">Lists</p>
+        <form class="flex mt-10 gap-5">
+          <input
+            type="text"
+            class="w-full p-5 rounded-md"
+            placeholder="new list"
+          />
+          <button class="bg-orange-200 px-5 rounded-md">Add</button>
+        </form>
+        <div class="mt-5">
+          <button class="bg-orange-100 w-full text-left p-2 mt-5">List1</button>
+        </div>
       </div>
+      <div class="todo-container flex-1 p-10">
+        <div class="input-field">
+          <textarea placeholder="Enter your new todo"></textarea>
+          <i class="uil uil-notes note-icon"></i>
+        </div>
 
-      <ul class="todoLists"></ul>
+        <ul class="todoLists"></ul>
 
-      <div class="pending-tasks">
-        <span
-          >You have <span class="pending-num"> no </span> tasks pending.</span
-        >
-        <button class="clear-button">Clear</button>
+        <div class="pending-tasks">
+          <span
+            >You have <span class="pending-num"> no </span> tasks pending.</span
+          >
+          <button class="clear-button">Clear</button>
+        </div>
       </div>
     </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
